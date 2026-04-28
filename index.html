@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,31 +7,36 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
+    <nav>
+      <a href="./index.html">Beranda</a>
+      <a href="./form.html">Form Pendaftaran</a>
+      <a href="./gallery.html">Gallery</a>
+    </nav>
+
     <h1>Selamat Datang di Tech Community</h1>
     <p>
-      Tech Community adalah komunitas untuk orang-orang pecinta teknologi untuk
-      berkumpul dan berbagi. Website ini adalah tempat untuk berinteraksi antar
-      anggota Tech Community
+      Tech Community adalah komunitas untuk para pecinta teknologi agar dapat
+      berkumpul, berdiskusi, dan saling berbagi ilmu.
     </p>
-    <h2>Berikut Anggota Tech Community</h2>
 
-    <div class="table">
-      <table border="1">
+    <h2>Daftar Anggota</h2>
+    <table>
+      <thead>
         <tr>
           <th>No</th>
           <th>Nama</th>
+          <th>Email</th>
+          <th>Bidang Minat</th>
         </tr>
-        <tr>
-            <td>1</td>
-            <td>Pasya Achmadinedja Maulana</td>
-        </tr>
-      </table>
-    </div>
+      </thead>
+      <tbody id="isi-tabel"></tbody>
+    </table>
 
-    <p>Ayo bergabung sekarang di Tech Community sekarang</p>
-    <button><a href="form.html">Daftar</a></button>
-
-    <p>Berikut adalah gallery dari Tech Community</p>
-    <button><a href="gallery.html">Disini</a></button>
+    <br />
+    <p>Ingin bergabung? Klik tombol di bawah ini.</p>
+    <a href="./form.html"><button>Daftar Sekarang</button></a>
+    <p>Lihat Gallery? Klik tombol di bawah ini.</p>
+    <a href="./gallery.html"><button>Lihat Gallery</button></a>
+    <script src="script/script.js"></script>
   </body>
 </html>

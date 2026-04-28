@@ -1,16 +1,58 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tech Community</title>
+    <title>Gallery - Tech Community</title>
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <h1>Gallery Tech Community</h1>
-    <img src="" alt="Gambar Tidak Tersedia" width="300" height="200" />
-    <video src="" alt="Video Tidak tersedia" />
-    <iframe src="" alt="Iframe Tidak Tersedia" />
+    <nav>
+      <a href="./index.html">Beranda</a>
+      <a href="./form.html">Form Pendaftaran</a>
+      <a href="./gallery.html">Gallery</a>
+    </nav>
 
+    <h1>Gallery Tech Community</h1>
+
+    <div class="media-section">
+      <h2>Foto Kegiatan</h2>
+      <img
+        id="gambar-utama"
+        src=""
+        alt="Foto Kegiatan"
+        width="400"
+        height="250"
+      />
+      <br />
+      <button onclick="gantiGambar()">Ganti Gambar</button>
+      <button onclick="infoGambar()">Info Gambar</button>
+    </div>
+
+    <div class="media-section">
+      <h2>Video Tutorial (HTML, CSS, JS)</h2>
+      <iframe
+        width="400"
+        height="250"
+        src="https://www.youtube.com/embed/MCVkMmYL-aY"
+        title="Video Tech Community"
+        allowfullscreen
+      >
+      </iframe>
+    </div>
+
+    <div class="media-section">
+      <h2>Musik Santai Sambil Ngoding</h2>
+      <audio id="audio-ku" controls>
+        <source src="audio/musik.mp3" type="audio/mpeg" />
+      </audio>
+      <br /><br />
+      <button onclick="putarAudio()">Play</button>
+      <button onclick="stopAudio()">Stop</button>
+    </div>
+
+    <a href="./index.html"><button>Kembali ke Beranda</button></a>
+
+    <script src="script/script.js"></script>
   </body>
 </html>
